@@ -24,7 +24,7 @@ git commit -m "Hello Message"
 git push origin main 
 ```
 
-Adding links: [Here is a link to Google.] (https://www.google.com)
+Adding links: [Google.com] (https://www.google.com)
 
 *Bananas
 *Apples

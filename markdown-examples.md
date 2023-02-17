@@ -26,10 +26,10 @@ git push origin main
 
 Adding links: [Google.com] (https://www.google.com)
 
-*Bananas
-*Apples
-*Oranges
-*Pineapples
+* Bananas
+* Apples
+* Oranges
+* Pineapples
 
 1.Bananas
 1. Apples

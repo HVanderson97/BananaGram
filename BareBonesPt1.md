@@ -17,10 +17,7 @@ sup apt upgrade
 
 Had to enter Y to approve install and use additional memory space.
 
-Finally, ran 
-```
-clear
-```
+Finally, ran clear
 to clear out the screen.
 
 2. First, I read through the transcript on the website. WOW. I feel like I just read something

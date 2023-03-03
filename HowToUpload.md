@@ -1,6 +1,6 @@
-#How to Upload
+# How to Upload
 
-##Because this is very intimidating
+## Because this is very intimidating
 
 1. Change Directory to BananGram.
 2. Create the file using nano [filename].md and ensure no spaces are in the file name, or it will make 2 files.

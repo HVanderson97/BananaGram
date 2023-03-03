@@ -1,3 +1,2 @@
 # BananaGram
-
-Here are some basic edits.
+Small files I create when completing assignments for my MLIS Systems Librarianship class at UKY.

@@ -33,8 +33,8 @@ Adding links: [Google.com] (https://www.google.com)
 
 1.Bananas
 1. Apples
--Red Delicious
--Granny Smith
+  -Red Delicious
+  -Granny Smith
 1. Oranges
 1. Pineapples
 

@@ -1,0 +1,54 @@
+# Notes for the Omeka Install
+## This was a difficult assignment.
+
+First:
+Create a new user and a new database in MySQL for the Omeka installation
+(do not re-use the WordPress database, user, or credentials).
+
+I installed the new user and database with MySQL
+sudo su
+mysql -u root
+create user 'omekauser'@'localhost' identified by 'b0ok31299';
+create database omeka;
+grant all privileges on omeka.* to 'omekauser'@'localhost';
+((Had a typo here that I found after much troubleshooting. I added ".db" after omeka and it didn't read the code to grant privleges.))
+\q
+
+Next, I installed Zip using:
+sudo apt-get install zip
+Then changed directory:
+cd /var/www/html
+Then used wget from the server to download Omeka Classic 
+as a Zip file and extracted it in /var/www/html:
+https://github.com/omeka/Omeka/releases/download/v3.1/omeka-3.1.zip
+Unzipped the file.
+(Forgot to login as root user and it was denied. Realized my error rather quickly and
+tried again as root, which worked!)
+The extracted directory was be named omeka-3.1.
+Changed name by using sudo mv omeka-3.1 omeka
+Success!
+
+
+Changed directory by using cd omeka
+opened the db.ini file using sudo nano db.ini
+and added database credentials, 
+'omekauser'@'localhost' identified by 'xxxxxx';
+and replaced all values containing XXXXXX, with the appropriate information.
+
+
+Use the chown command like we did with WordPress on the files directory
+in the omeka directory. The user and owner should again be www-data.
+
+sudo chown -R www-data:www-data *
+
+Restart Apache2 and MySQL using:
+sudo systemctl restart apache2
+systemctl status apache2
+
+In your web browser, go to http://your-ip-address/omeka/ and 
+complete the setup via the web form, just like you did with WordPress.
+
+
+Had an error message on the web browser. Spent 15 minutes troubleshooting and realized I
+added an erroneous DB to the granting privleges code line. Re-entered mysql and re-entered
+the privleges line. Immediate success when reloading the browser window!

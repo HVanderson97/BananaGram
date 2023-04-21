@@ -15,3 +15,7 @@ I ran the following commands:
 ```
 sudo apt install apache2
 ```
+
+Configured PHP then installed and configured MySQL.
+
+Followed the directions after watching the video and had no issues to report this week, for once!

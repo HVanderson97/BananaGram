@@ -1,0 +1,19 @@
+Wordpress Install
+
+Updated systems successfully
+
+Made it through steps 1-3 without issue and followed the instructions easily.
+
+Step 4, actually writing the data always makes me nervous in case I have a typo. I have begun to write
+out the text in notepad then copy and paste it over to ensure no errors exist.
+
+Took a bit to find the end to add the FS_Method information, but entered sucessfully.
+
+Changed the name of Wordpress directory to Blog using
+cd /var/www/html
+sudo mv wordpress blog
+
+Finally completed steps 6-7 without issue!
+
+I am familiar with Wordpress through a personal blog, so the interface is familiar for once
+and not as intimidating!

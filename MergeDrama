@@ -1,0 +1,13 @@
+Couldn't remember my Wordpress login information, like a dunce. When trying to find it, I accidentally reset the Wordpress blog page.
+I tried to create a new user and password, but acciedentally changed the database user in mySQL.  Ended up creating an error in code when changing the user to my username instead of wordpress
+
+To figure out my username, I used the following from WordPress site documenting how to change a password in MySQL.
+show databases;
+use wordpress;
+show tables;
+SELECT * FROM wp_users;
+SELECT ID, user_login, user_pass FROM wp_users;
+UPDATE (name-of-table-you-found) SET user_pass=”(MD5-string-you-made)” WHERE ID = (id#-of-account-you-are-reseting-password-for);” (actually changes the password)
+UPDATE wp_users SET user_pass='b0oks31299' WHERE ID = 1;
+
+Before deleting it entirely and starting over, I tried to use a random password I haven't used this entire semester, and that worked! Problem solving for nothing.
